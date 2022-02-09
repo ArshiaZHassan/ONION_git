@@ -33,7 +33,7 @@ for(pc in pc_list)
 {
   print(pc)
   # set RPCA lambda hyperparameter (suqre-root of maximum between row-number(genes) and column-number(cell-lines))
-  lam  = pc/(sqrt(max(nrow(data),ncol(data))))
+  lam  = pc/(sqrt(max(nrow(data),ncol(data)))) # 1/(sqrt(max(# of genes,# of cell lines)))
   print(lam)
   #scale data prior to applying rpca
   data <- scale(data)

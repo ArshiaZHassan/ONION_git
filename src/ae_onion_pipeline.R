@@ -3,8 +3,8 @@
 #ONION normalization with AE: 
 #Integrate auto-encoder(AE) generated normalized data using SNF(Similarity Network Fusion)
 #Input:
-#DepMap 20q2 Achilles_gene_effect data preprocessed to replace NA values with gene-level mean (rows:genes, columns:cell lines) 
-#Auto-encoder generated normalized data from DepMap 20q2 Achilles_gene_effect data(rows:genes, columns:cell lines)
+	#DepMap 20q2 Achilles_gene_effect data preprocessed to replace NA values with gene-level mean (rows:genes, columns:cell lines) 
+	#Auto-encoder generated normalized data from DepMap 20q2 Achilles_gene_effect data(rows:genes, columns:cell lines)
 #Output: .Rdata matrix w (gene-level integrated similarity-network)
 
 #SNFtool - http://compbio.cs.toronto.edu/SNF/SNF/Software.html - SNFtool_v2.1.tar.gz
