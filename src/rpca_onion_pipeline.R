@@ -2,7 +2,7 @@
 #@author:  Arshia Zernab Hassan (hassa418@d.umn.edu)
 #ONION normalization with rpca: 
 #Apply Robust Principal Component Analysis(RPCA) to create normalized data and integrate with SNF(Similarity Network Fusion)
-#Input: DepMap 20q2 Achilles_gene_effect data preprocessed to replace NA values with gene-level mean
+#Input: DepMap 20q2 Achilles_gene_effect data preprocessed to replace NA values with gene-level mean (rows:genes, columns:cell lines)
 #Output: .Rdata matrix w (gene-level similarity network)
 
 #rpca tool - https://cran.r-project.org/web/packages/rpca/index.html - rpca_0.2.3.tar.gz
@@ -11,7 +11,7 @@
 library("rpca", lib.loc="../../../local/R/library/")
 library("SNFtool", lib.loc="../../../local/R/library/")
 
-#Load DepMap gene effect-size file (NA values replaced with gene-level mean)
+#Load DepMap 20q2 Achilles_gene_effect data (NA values replaced with gene-level mean)
 input_file <- "../data/depmap_q2_2020_nona_mean.tsv"
 data <- read.csv(input_file, sep = "\t", header = TRUE, row.names = 1,stringsAsFactors=F)
 
@@ -23,7 +23,7 @@ K= 5 #number of neighbors
 alpha= 5*.1 # hyperparameter
 T = 10; 	# Number of Iterations
 
-#Set weight list to regulate RPCA lambda hyperparameter values in creating normalized data sets
+#Weights to regulate RPCA lambda hyperparameter values in creating normalized data sets
 pc_list<-c(.7,.8,.9,1,1.1,1.2,1.3)
 
 s_list <- list()
@@ -48,15 +48,15 @@ for(pc in pc_list)
   S_t <- data.frame(t(S_))
   sim_net <- cor(S_t, use = "all.obs",method="pearson")
   
-  #create affinity matrix from similarity-network (required step for integration with SNF)
+  #create affinity-network from similarity-network (required step for integration with SNF)
   s = affinityMatrix(1-sim_net, K, alpha)
   
-  #append network to integration list
+  #append affinity-network to integration list
   s_list <- append(s_list,list(s))
 
 }
 
-#Integrate affinity networks with SNF
+#Integrate affinity-networks with SNF
 print('Integrating ...')
 w = SNF(s_list, K, T)
 print('end run SNF')
