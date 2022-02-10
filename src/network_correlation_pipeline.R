@@ -102,8 +102,8 @@ layer_list<-c(1,2,3,4,5,10)
 for(layer in layer_list)
 {
 	print(layer)
-  #generate normalized and projected data
-  #Load AE-normalized data for latent-space size 'pc'
+  #generate normalized and reconstructed data
+  #Load AE-normalized data for latent-space size 'layer'
   input_file_name <- paste(ae_folder,'20q2_epochs_1_latent_',layer,'_normalized_ae.tsv',sep = '')
   norm_data <- read.csv(input_file_name, sep = "\t", header = TRUE, row.names = 1)
 	#use pre-processed data to extract reconstructed data
@@ -204,7 +204,7 @@ layer_list<-c(.7,.8,.9,1,1.1,1.2,1.3)
 for(layer in layer_list)
 {
 	print(layer)
-  #generate normalized and projected data
+  #generate normalized and reconstructed data
   # set RPCA lambda hyperparameter (suqre-root of maximum between row-number(genes) and column-number(cell-lines))
   lam  = layer/(sqrt(max(nrow(data),ncol(data)))) # 1/(sqrt(max(# of genes,# of cell lines)))
   print(lam)
