@@ -1,0 +1,49 @@
+crayon - crayon_1.4.2
+
+desc - desc_1.3.0
+
+devtools - devtools_2.4.0
+
+digest
+
+dplyr - dplyr_1.0.7
+
+farver - farver_2.1.0
+
+gplots - gplots_3.1.1
+
+ggplot2 - ggplot2_3.3.5
+
+ggthemes - ggthemes_4.2.4
+
+labeling - labeling_0.4.2
+
+pillar - pillar_1.6.4
+
+PRROC - PRROC_1.3.1
+
+ps - ps_1.6.0
+
+ramify
+
+RColorBrewer - RColorBrewer_1.1-2
+
+RcppCNPy - RcppCNPy_0.2.10
+
+rpca - rpca_0.2.3
+
+rstudioapi - rstudioapi_0.13
+
+SNFtool - SNFtool_v2.1
+
+stringi
+
+stringr
+
+tidyr - tidyr_1.1.4
+
+tools
+
+usethis - usethis_2.0.1
+
+withr - withr_2.4.2
