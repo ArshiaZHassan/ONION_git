@@ -51,6 +51,8 @@
 
 -Run from inside src directory in the given order. Some scripts are dependent on outputs from other scripts. Please refer to <---> for script dependency.
 
+-Please refer to data_flow_.pdf and data_flow_2_.pdf for script input/output flow.
+
      Rscript pre_process.R
      Rscript pca_normalization_pipeline.R
      Rscript rpca_normalization_pipeline.R
