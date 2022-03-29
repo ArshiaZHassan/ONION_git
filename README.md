@@ -3,36 +3,49 @@
  
  ## Directory Set Up
  -Download ONION-git repo.
+ 
  -All source codes (R scripts) are in the ONION-git/src directory.
+ 
  -Create 'input' directory in ONOION-git. The following files should be in the 'input' directory to successfully run all the scripts.
+ 
  -Create 'output' directory in ONOION-git. Create 'ae','pca','rpca' and 'onion' directories in the 'output' directory.
+ 
  -Download FLEX and put in the same directory as the ONION-git.
+ 
  -Directory and file organization
- 	-ONION-git
-   -src
-    -<provided R scripts>
-   -input
-    -20Q2_GLS_fdr.npy
-    -20Q2_GLS_sign.npy
-    -Achilles_gene_effect.csv
-    -all_genes_20q2.txt
-    -depmap_q2_2020_nona_mean.tsv
-    -depmap_q2_2020_nona_mean_rst_clp_mms.tsv
-    -Mitochondial_genelist_1_26_2021_genes.tsv
-    -olfactory_receptors.csv
-    -ae_tanh_e1_depmap_20q2
-     -20q2_epochs_1_latent_1_normalized_ae.tsv
-     -20q2_epochs_1_latent_2_normalized_ae.tsv
-     -20q2_epochs_1_latent_3_normalized_ae.tsv
-     -20q2_epochs_1_latent_4_normalized_ae.tsv
-     -20q2_epochs_1_latent_5_normalized_ae.tsv
-     -20q2_epochs_1_latent_10_normalized_ae.tsv
-   -output
-    -ae
-    -pca
-    -rpca
-    -onion
-  -FLEX
+ 
+    .
+     ├── ONION-git
+     │   ├── src                     
+     │   │   ├── ...                                                    # provided R scripts
+     │   ├── input
+     │   │   ├── 20Q2_GLS_fdr.npy                                       
+     │   │   ├── 20Q2_GLS_sign.npy
+     │   │   ├── Achilles_gene_effect.csv
+     │   │   ├── depmap_q2_2020_nona_mean.tsv
+     │   │   ├── depmap_q2_2020_nona_mean_rst_clp_mms.tsv
+     │   │   ├── all_genes_20q2.txt
+     │   │   ├── Mitochondial_genelist_1_26_2021_genes.tsv
+     │   │   ├── olfactory_receptors.csv
+     │   │   ├── ae_tanh_e1_depmap_20q2
+     │   │   │   ├── 20q2_epochs_1_latent_1_normalized_ae.tsv
+     │   │   │   ├── 20q2_epochs_1_latent_2_normalized_ae.tsv
+     │   │   │   ├── 20q2_epochs_1_latent_3_normalized_ae.tsv
+     │   │   │   ├── 20q2_epochs_1_latent_4_normalized_ae.tsv
+     │   │   │   ├── 20q2_epochs_1_latent_5_normalized_ae.tsv
+     │   │   │   ├── 20q2_epochs_1_latent_10_normalized_ae.tsv
+     │   ├── output
+     │   │   ├── ae
+     │   │   │   ├── ...                                              # outputs are created after running R scripts
+     │   │   ├── pca
+     │   │   │   ├── ...                                              # outputs are created after running R scripts
+     │   │   ├── rpca
+     │   │   │   ├── ...                                              # outputs are created after running R scripts
+     │   │   ├── onion
+     │   │   │   ├── ...                                              # outputs are created after running R scripts
+     ├── FLEX
+     │   ├── ...                                                      # Directories from FLEX package
+ 
 
 
 ## Workflow
