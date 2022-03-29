@@ -6,7 +6,7 @@
  
  -All source codes (R scripts) are in the ONION-git/src directory.
  
- -Create 'input' directory in ONOION-git. The following files should be in the 'input' directory to successfully run all the scripts.
+ -Create 'input' directory in ONOION-git.
  
  -Create 'output' directory in ONOION-git. Create 'ae','pca','rpca' and 'onion' directories in the 'output' directory.
  
