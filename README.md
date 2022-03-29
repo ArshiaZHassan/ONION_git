@@ -12,7 +12,7 @@
  
  -Download FLEX and put in the same directory as the ONION-git.
  
- -Directory and file organization
+ -Required directory and file organization
  
     .
      ├── ONION-git
@@ -46,9 +46,25 @@
      ├── FLEX
      │   ├── ...                                                      # Directories from FLEX package
  
+## Run instruction
+-Required packages and dependencies should be installed prior to running the scripts. Required packages are listed in the <--->.
+-Run from inside src directory in the given order. Some scripts are dependent on outputs from other scripts. Please refer to <---> for script dependency.
 
+     Rscript pre_process.R
+     Rscript pca_normalization_pipeline.R
+     Rscript rpca_normalization_pipeline.R
+     Rscript ae_normalization_pipeline.R
+     Rscript network_correlation_pipeline.R
+     Rscript pca_onion_pipeline.R
+     Rscript rpca_onion_pipeline.R
+     Rscript ae_onion_pipeline.R
+     Rscript pre_process_gls.R
+     Rscript onion_evaluation_pipeline.R
+     Rscript AUPRC_barplot_layer_evaluation_pipeline.R
+     Rscript AUPRC_barplot_onion_evaluation_pipeline.R
+ 
 
-## Workflow
+## Script Summary
 Pre-process DepMap data:
 
 pre_process.R
