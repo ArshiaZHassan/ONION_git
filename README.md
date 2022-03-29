@@ -49,7 +49,7 @@
 ## Run instruction
 -Required packages and dependencies should be installed prior to running the scripts. Required packages are listed in the 'R packages'.
 
--Run from inside src directory in the given order. Some scripts are dependent on outputs from other scripts. Please refer to <---> for script dependency.
+-Run from inside src directory in the given order. Some scripts are dependent on outputs from other scripts. Please refer to script_dependency_flow_.pdf for script dependency.
 
 -Please refer to data_flow_.pdf and data_flow_2_.pdf for script input/output flow.
 
