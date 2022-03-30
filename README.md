@@ -6,7 +6,7 @@
  
  -All source codes (R scripts) are in the ONION-git/src directory.
  
- -Create 'input' directory in ONOION-git.
+ -Create 'data' directory in ONOION-git.
  
  -Create 'output' directory in ONOION-git. Create 'ae','pca','rpca' and 'onion' directories in the 'output' directory.
  
@@ -18,7 +18,7 @@
      ├── ONION-git
      │   ├── src                     
      │   │   ├── ...                                                    # provided R scripts
-     │   ├── input
+     │   ├── data
      │   │   ├── 20Q2_GLS_fdr.npy                                       
      │   │   ├── 20Q2_GLS_sign.npy
      │   │   ├── Achilles_gene_effect.csv
