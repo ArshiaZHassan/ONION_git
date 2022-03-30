@@ -271,7 +271,7 @@ corum_sim_no_mito <- append(corum_sim_no_mito, list(list(true = complex$true, pr
 corum_sim_benchmark_no_mito <- append(corum_sim_benchmark_no_mito, list(list(true = complex$true, predicted = complex$predicted)))
 ####################################################################################################################
 print("Evaluating GLS data...")
-load(file=file.path("../data/", "gls_20q2_inv_sign_FDR.Rdata"))#variable name -- gls_in
+load(file=file.path(input_folder, "gls_20q2_inv_sign_FDR.Rdata"))#variable name -- gls_in
 
 print("Generating corum-complex standard evaluation data...")
 #generate corum-complex standard evaluation results for original data
