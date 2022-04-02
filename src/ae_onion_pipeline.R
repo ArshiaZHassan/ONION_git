@@ -9,7 +9,7 @@
 
 #SNFtool - http://compbio.cs.toronto.edu/SNF/SNF/Software.html - SNFtool_v2.1.tar.gz
 
-library("SNFtool", lib.loc="../../../local/R/library/")
+library(SNFtool)
 
 #Directory path to AE-normalized data generated from DepMap 20q2 Achilles_gene_effect data
 input_folder <- "../data/ae_tanh_e1_depmap_20q2/"
