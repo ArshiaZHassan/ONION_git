@@ -7,7 +7,7 @@
 
 #SNFtool - http://compbio.cs.toronto.edu/SNF/SNF/Software.html - SNFtool_v2.1.tar.gz
 
-library("SNFtool", lib.loc="../../../local/R/library/")
+library(SNFtool)
 
 #Load DepMap gene effect-size data (NA values replaced with gene-level mean)
 input_file <- "../data/depmap_q2_2020_nona_mean.tsv"
