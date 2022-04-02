@@ -8,8 +8,8 @@
 #rpca tool - https://cran.r-project.org/web/packages/rpca/index.html - rpca_0.2.3.tar.gz
 #SNFtool - http://compbio.cs.toronto.edu/SNF/SNF/Software.html - SNFtool_v2.1.tar.gz
 
-library("rpca", lib.loc="../../../local/R/library/")
-library("SNFtool", lib.loc="../../../local/R/library/")
+library(rpca)
+library(SNFtool)
 
 #Load DepMap 20q2 Achilles_gene_effect data (NA values replaced with gene-level mean)
 input_file <- "../data/depmap_q2_2020_nona_mean.tsv"
