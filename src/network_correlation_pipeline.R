@@ -11,17 +11,17 @@
 
 #rpca tool - https://cran.r-project.org/web/packages/rpca/index.html - rpca_0.2.3.tar.gz
 
-library("ramify", lib.loc="../../../local/R/library/")
-library("crayon", lib.loc="../../../local/R/library/")
-library("pillar", lib.loc="../../../local/R/library/")
-library("withr", lib.loc="../../../local/R/library/")
-library("labeling", lib.loc="../../../local/R/library/")
-library("farver", lib.loc="../../../local/R/library/")
-library("digest", lib.loc="../../../local/R/library/")
-library("ggplot2", lib.loc="../../../local/R/library/")
-library("RColorBrewer", lib.loc="../../../local/R/library/")
+library(ramify)
+library(crayon)
+library(pillar)
+library(withr)
+library(labeling)
+library(farver)
+library(digest)
+library(ggplot2)
+library(RColorBrewer)
 
-library("rpca", lib.loc="../../../local/R/library/")
+library(rpca)
 
 # Function:
     # create_network_correlation_scatter_plot
