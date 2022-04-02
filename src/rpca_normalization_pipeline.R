@@ -14,17 +14,17 @@
 
 #rpca tool - https://cran.r-project.org/web/packages/rpca/index.html - rpca_0.2.3.tar.gz
 
-library("stringi", lib.loc="../../../local/R/library/")
-library("stringr", lib.loc="../../../local/R/library/")
-library("rstudioapi", lib.loc="../../../local/R/library/")
-library("desc", lib.loc="../../../local/R/library/")
-library("withr", lib.loc="../../../local/R/library/")
-library("ps", lib.loc="../../../local/R/library/")
-library("usethis", lib.loc="../../../local/R/library/")
-library("devtools", lib.loc="../../../local/R/library/")
-library("RColorBrewer", lib.loc="../../../local/R/library/")
+library(stringi)
+library(stringr)
+library(rstudioapi)
+library(desc)
+library(withr)
+library(ps)
+library(usethis)
+library(devtools)
+library(RColorBrewer)
 
-library("rpca", lib.loc="../../../local/R/library/")
+library(rpca)
 
 # Function:
     # generate_stepwise_contribution_data
