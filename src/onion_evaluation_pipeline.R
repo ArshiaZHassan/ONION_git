@@ -2,7 +2,13 @@
 #ONION-normalization evaluation: 
 #Evaluation of ONION-normalized data with FLEX
 #Input: 
-	
+	#DepMap 20q2 Achilles_gene_effect data preprocessed to replace NA values with gene-level mean (rows:genes, columns:cell lines)
+	#Mitochondrial gene list
+	#Olfactory receptor list
+	#PCO-normalized .Rdata matrix w (gene-level integrated similarity-network)
+	#RPCO-normalized .Rdata matrix w (gene-level integrated similarity-network)
+	#AEO-normalized .Rdata matrix w (gene-level integrated similarity-network)
+	#GLS normalized network .Rdata matrix gls_in (gene-level similarity-network)
 #Output: 
 	# Normalized data
 	# Reconstructed data
