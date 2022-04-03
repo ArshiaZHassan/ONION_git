@@ -4,6 +4,7 @@
 #Evaluation with FLEX
 #Input: 
 	#DepMap 20q2 Achilles_gene_effect data preprocessed to replace NA values with gene-level mean (rows:genes, columns:cell lines)
+	#List of Mitochondrial genes
 #Output: 
 	# Normalized data
 	# Reconstructed data
