@@ -6,9 +6,9 @@
  
  -All source codes (R scripts) are in the ONION-git/src directory.
  
- -Create 'data' directory in ONOION-git.
+ -Create 'data' directory in ONION-git.
  
- -Create 'output' directory in ONOION-git. Create 'ae','pca','rpca' and 'onion' directories in the 'output' directory.
+ -Create 'output' directory in ONION-git. Create 'ae','pca','rpca' and 'onion' directories in the 'output' directory.
  
  -Download FLEX and put in the same directory as the ONION-git.
  
