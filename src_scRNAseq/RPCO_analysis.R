@@ -94,7 +94,7 @@ data <- read.table(input_file_name,sep='\t',header = T, row.names=1, stringsAsFa
 #create similarity network from normalized data
 data_t <- data.frame(t(data)) #transpose data - make genes as columns
 sim_net <- cor(data_t, use = "all.obs",method="pearson") #use pearson correlation to create similarity network
-sim_net[is.na(sim_net)] <- 0 #NA imputation with 0
+#sim_net[is.na(sim_net)] <- 0 #NA imputation with 0
 
 print("Generating corum-complex standard evaluation data...")
 #generate corum-complex standard evaluation results for original data
@@ -144,7 +144,7 @@ for(layer in layer_list)
 	#create similarity network from normalized data
 	norm_data_t <- data.frame(t(norm_data)) #transpose data - make genes as columns
 	sim_net <- cor(norm_data_t, use = "all.obs",method="pearson") #use pearson correlation to create similarity network
-	sim_net[is.na(sim_net)] <- 0 #NA imputation with 0
+	#sim_net[is.na(sim_net)] <- 0 #NA imputation with 0
 	
 	#generate corum-complex standard evaluation results
 	complex <- CalculatePredictionAndTrueOnLibraryProfiles(corum, sim_net)	
