@@ -1,5 +1,8 @@
 # ONION_git
- onion_manuscript local rep
+ Code repository for preprint 'Dimensionality reduction methods for extracting functional networks from large-scale CRISPR screens'
+ https://doi.org/10.1101/2023.02.22.529573
+ 
+ Repository of input data and output files : https://zenodo.org/record/7671685#.Y_gi9nbMK5c
  
  ## Directory Set Up
  -Download ONION-git repo.
@@ -7,6 +10,8 @@
  -All source codes (R scripts) are in the ONION-git/src directory.
  
  -Create 'data' directory in ONION-git.
+ 
+ -Input data required for this are uploaded here - https://zenodo.org/record/7671685#.Y_gi9nbMK5c
  
  -Create 'output' directory in ONION-git. Create 'ae','pca','rpca' and 'onion' directories in the 'output' directory.
  
@@ -67,43 +72,43 @@
      Rscript AUPRC_barplot_onion_evaluation_pipeline.R
  
 
-## Script Summary
+## Script list
 Pre-process DepMap data:
 
-pre_process.R
+   pre_process.R
 
 PCA-normalization:
 
-pca_normalization_pipeline.R
+   pca_normalization_pipeline.R
 
 RPCA-normalization:
 
-rpca_normalization_pipeline.R
+   rpca_normalization_pipeline.R
 
 AE-normalization:
 
-ae_normalization_pipeline.R
+   ae_normalization_pipeline.R
 
 PC-Onion:
 
-pca_onion_pipeline.R
+   pca_onion_pipeline.R
 
 RPC-Onion:
 
-rpca_onion_pipeline.R
+   rpca_onion_pipeline.R
 
 AE-Onion:
 
-ae_onion_pipeline.R
+   ae_onion_pipeline.R
 
 Evaluation:
 
-network_correlation_pipeline.R
+   network_correlation_pipeline.R
 
-pre_process_gls.R
+   pre_process_gls.R
 
-onion_evaluation_pipeline.R
+   onion_evaluation_pipeline.R
 
-AUPRC_barplot_layer_evaluation_pipeline.R
+   AUPRC_barplot_layer_evaluation_pipeline.R
 
-AUPRC_barplot_onion_evaluation_pipeline.R
+   AUPRC_barplot_onion_evaluation_pipeline.R
