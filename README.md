@@ -1,8 +1,8 @@
 # ONION_git
  Code repository for preprint 'Dimensionality reduction methods for extracting functional networks from large-scale CRISPR screens'
  https://doi.org/10.1101/2023.02.22.529573
- 
- Repository of input data and output files : https://zenodo.org/record/7671685#.Y_gi9nbMK5c
+ Repository for autoencoder-normalization code: https://github.com/csbio/ae-norm 
+ Repository for input data and output files : https://zenodo.org/record/7671685#.Y_gi9nbMK5c
  
  ## Directory Set Up
  -Download ONION-git repo.
